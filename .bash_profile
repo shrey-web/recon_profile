@@ -1,8 +1,10 @@
 #----- UPLOAD -------
-upload(){
+upload() {
+for i in `cat $1`
+do
 curl https://bashupload.com/ -T $1
+done
 }
-
 
 #---- Content discovery ----
 thewadl(){ #this grabs endpoints from a application.wadl and puts them in yahooapi.txt
