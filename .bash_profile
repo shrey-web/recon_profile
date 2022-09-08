@@ -1,5 +1,5 @@
 #----- UPLOAD -------
-upload() {
+upload(){
 curl https://bashupload.com/ -T $1
 }
 
