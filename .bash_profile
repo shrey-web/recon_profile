@@ -1,9 +1,6 @@
 #----- UPLOAD -------
 upload() {
-for i in `cat $1`
-do
 curl https://bashupload.com/ -T $1
-done
 }
 
 #---- Content discovery ----
