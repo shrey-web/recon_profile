@@ -196,7 +196,7 @@ JS_HUNTING () {
 	echo -e ${BLUE}"[JS FILES HUNTING]" ${GREEN}"SecretFinder installation is done !"; echo "";
 	#subjs
 	echo -e ${BLUE}"[JS FILES HUNTING]" ${RED}"subjs installation in progress ...";
-	go get -u github.com/lc/subjs > /dev/null 2>&1 && ln -s ~/go/bin/subjs /usr/local/bin/;
+	cd /tmp && wget https://github.com/lc/subjs/releases/download/v1.0.1/subjs_1.0.1_linux_amd64.tar.gz > /dev/null 2>&1 && tar xvf subjs_1.0.1_linux_amd64.tar.gz > /dev/null 2>&1 && mv subjs /usr/local/bin;
 	echo -e ${BLUE}"[JS FILES HUNTING]" ${GREEN}"subjs installation is done !"; echo "";
 }
 
