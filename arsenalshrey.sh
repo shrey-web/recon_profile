@@ -23,7 +23,7 @@ ENVIRONMENT () {
 		#Specific Ubuntu
 		#Specificity : chromium-browser replace chromium
         apt-get update -y > /dev/null 2>&1
-        apt-get install chromium-browser python3 python3-pip jq git dnsutils whois unzip make vim wget tree zip libpcap-dev curl build-essential default-jdk ruby-full -y > /dev/null 2>&1;
+        apt-get install chromium-browser python3 python3-pip jq dnsutils whois unzip make vim wget tree zip libpcap-dev curl build-essential default-jdk ruby-full -y > /dev/null 2>&1;
         pip3 install --upgrade pip
         pip3 install requests
         pip3 install pyOpenSSL --upgrade
