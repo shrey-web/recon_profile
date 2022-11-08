@@ -25,8 +25,8 @@ ENVIRONMENT () {
         apt-get update -y > /dev/null 2>&1
         apt-get install chromium-browser python3 python3-pip jq git dnsutils whois unzip make vim wget tree zip libpcap-dev curl build-essential default-jdk ruby-full -y > /dev/null 2>&1;
         pip3 install --upgrade pip
-		    pip3 install requests
-		    pip3 install pyOpenSSL --upgrade
+        pip3 install requests
+        pip3 install pyOpenSSL --upgrade
 	elif [ "$OS" == "Kali" ]; then
 		#Specific Kali Linux
 		#Specificity : no package name with "python"
@@ -158,16 +158,16 @@ WORDLISTS () {
 VULNS_XSS () {
 	#Dalfox
 	echo -e ${BLUE}"[VULNERABILITY - XSS]" ${RED}"Dalfox installation in progress ...";
-	GO111MODULE=on go get -v github.com/hahwul/dalfox/v2 > /dev/null 2>&1 && ln -s ~/go/bin/dalfox /usr/local/bin/;
+	go install github.com/hahwul/dalfox/v2@latest > /dev/null 2>&1 && ln -s ~/go/bin/dalfox /usr/local/bin/;
 	echo -e ${BLUE}"[VULNERABILITY - XSS]" ${GREEN}"Dalfox installation is done !"; echo "";
 	#XSStrike
 	echo -e ${BLUE}"[VULNERABILITY - XSS]" ${RED}"XSStrike installation in progress ...";
 	cd $TOOLS_DIRECTORY && git clone https://github.com/s0md3v/XSStrike > /dev/null 2>&1 && cd XSStrike && pip3 install -r requirements.txt > /dev/null 2>&1;
 	echo -e ${BLUE}"[VULNERABILITY - XSS]" ${GREEN}"XSStrike installation is done !"; echo "";
-	#kxss
-	echo -e ${BLUE}"[VULNERABILITY - XSS]" ${RED}"kxss installation in progress ...";
-	go get -u github.com/tomnomnom/hacks/kxss > /dev/null 2>&1 && ln -s ~/go/bin/kxss /usr/local/bin/;
-	echo -e ${BLUE}"[VULNERABILITY - XSS]" ${GREEN}"kxss installation is done !"; echo "";
+	#Gxss
+	echo -e ${BLUE}"[VULNERABILITY - XSS]" ${RED}"Gxss installation in progress ...";
+	go install github.com/KathanP19/Gxss@latest > /dev/null 2>&1 && ln -s ~/go/bin/Gxss /usr/local/bin/;
+	echo -e ${BLUE}"[VULNERABILITY - XSS]" ${GREEN}"Gxss installation is done !"; echo "";
 }
 
 VULNS_SQLI () {
@@ -252,14 +252,14 @@ USEFUL_TOOLS () {
 	echo -e ${BLUE}"[USEFUL TOOLS]" ${RED}"Interlace installation in progress ...";
 	cd $TOOLS_DIRECTORY && git clone https://github.com/codingo/Interlace.git > /dev/null 2>&1 && cd Interlace && python3 setup.py install > /dev/null 2>&1;
 	echo -e ${BLUE}"[USEFUL TOOLS]" ${GREEN}"Interlace installation is done !"; echo "";
-	#Tmux
-	echo -e ${BLUE}"[USEFUL TOOLS]" ${RED}"Tmux installation in progress ...";
-	apt-get install tmux -y > /dev/null 2>&1;
-	echo -e ${BLUE}"[USEFUL TOOLS]" ${GREEN}"Tmux installation is done !"; echo "";
-	#Uro
-	echo -e ${BLUE}"[USEFUL TOOLS]" ${RED}"Uro installation in progress ...";
-	pip3 install uro > /dev/null 2>&1;
-	echo -e ${BLUE}"[USEFUL TOOLS]" ${GREEN}"Uro installation is done !" ${RESTORE}; echo "";
+	#Bhedak
+	echo -e ${BLUE}"[USEFUL TOOLS]" ${RED}"Bhedak installation in progress ...";
+	pip3 install bhedak > /dev/null 2>&1;
+	echo -e ${BLUE}"[USEFUL TOOLS]" ${GREEN}"Bhedak installation is done !"; echo "";
+	#Urless
+	echo -e ${BLUE}"[USEFUL TOOLS]" ${RED}"Urless installation in progress ...";
+	cd $TOOLS_DIRECTORY && git clone https://github.com/xnl-h4ck3r/urless.git > /dev/null 2>&1 && cd urless && python3 setup.py install > /dev/null 2>&1;
+	echo -e ${BLUE}"[USEFUL TOOLS]" ${GREEN}"Urless installation is done !" ${RESTORE}; echo "";
 }
 
-ENVIRONMENT && SUBDOMAINS_ENUMERATION && DNS_RESOLVER && VISUAL_RECON && HTTP_PROBE && WEB_CRAWLING && NETWORK_SCANNER && HTTP_PARAMETER && FUZZING_TOOLS && API_TOOLS && WORDLISTS && VULNS_XSS && VULNS_SQLI && VULNS_SCANNER && JS_HUNTING && GIT_HUNTING  && SENSITIVE_FINDING && USEFUL_TOOLS;
+ENVIRONMENT && SUBDOMAINS_ENUMERATION && DNS_RESOLVER && VISUAL_RECON && HTTP_PROBE && WEB_CRAWLING && NETWORK_SCANNER && HTTP_PARAMETER && FUZZING_TOOLS && API_TOOLS && WORDLISTS && VULNS_XSS && VULNS_SQLI && VULNS_SCANNER && JS_HUNTING && GIT_HUNTING && SENSITIVE_FINDING && USEFUL_TOOLS;
