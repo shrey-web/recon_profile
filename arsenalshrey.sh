@@ -232,6 +232,14 @@ USEFUL_TOOLS () {
 	echo -e ${BLUE}"[USEFUL TOOLS]" ${RED}"getallurls installation in progress ...";
 	go install github.com/lc/gau/v2/cmd/gau@latest > /dev/null 2>&1 && ln -s ~/go/bin/gau /usr/local/bin/;
 	echo -e ${BLUE}"[USEFUL TOOLS]" ${GREEN}"getallurls installation is done !"; echo "";
+	#waybackurls
+	echo -e ${BLUE}"[USEFUL TOOLS]" ${RED}"waybackurls installation in progress ...";
+	go install github.com/tomnomnom/waybackurls@latest > /dev/null 2>&1 && ln -s ~/go/bin/waybackurls /usr/local/bin/;
+	echo -e ${BLUE}"[USEFUL TOOLS]" ${GREEN}"waybackurls installation is done !"; echo "";
+	#meg
+	echo -e ${BLUE}"[USEFUL TOOLS]" ${RED}"meg installation in progress ...";
+	go install github.com/tomnomnom/meg@latest > /dev/null 2>&1 && ln -s ~/go/bin/meg /usr/local/bin/;
+	echo -e ${BLUE}"[USEFUL TOOLS]" ${GREEN}"meg installation is done !"; echo "";
 	#unfurl
 	echo -e ${BLUE}"[USEFUL TOOLS]" ${RED}"unfurl installation in progress ...";
 	go install github.com/tomnomnom/unfurl@latest > /dev/null 2>&1 && ln -s ~/go/bin/unfurl /usr/local/bin/;
