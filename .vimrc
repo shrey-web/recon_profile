@@ -21,6 +21,7 @@ runtime! debian.vim
 
 " Vim5 and later versions support syntax highlighting. Uncommenting the next
 " line enables syntax highlighting by default.
+packadd! onedark.vim
 if has("syntax")
   syntax on
 endif
@@ -62,6 +63,13 @@ endif
  set tm=500
  set history=500
  set laststatus=2
+
+let g:onedark_terminal_italics=1 
+let g:onedark_termcolors=256
+let g:lightline = {
+\ 'colorscheme': 'materia',
+\ }
+colorscheme onedark
 
 
 " Source a global configuration file if available
