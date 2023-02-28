@@ -25,6 +25,10 @@ if has("syntax")
   syntax on
 endif
 
+if has("termguicolors")
+    set termguicolors
+endif
+
 " If using a dark background within the editing area and syntax highlighting
 " turn on this option as well
 "set background=dark
@@ -57,6 +61,7 @@ endif
  set t_vb=
  set tm=500
  set history=500
+ set laststatus=2
 
 
 " Source a global configuration file if available
