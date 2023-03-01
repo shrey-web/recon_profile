@@ -64,12 +64,16 @@ endif
  set history=500
  set laststatus=2
 
-let g:onedark_terminal_italics=1 
-let g:onedark_termcolors=256
+"let g:airline_symbols_ascii = 1
+"let g:codedark_term256=1
+ let g:onedark_terminal_italics = 1 
+ let g:onedark_termcolors = 256
 let g:lightline = {
 \ 'colorscheme': 'materia',
 \ }
-colorscheme onedark
+"let g:airline_theme='onedark'
+ colorscheme onedark
+"colorscheme codedark
 
 
 " Source a global configuration file if available
