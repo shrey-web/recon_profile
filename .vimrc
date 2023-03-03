@@ -63,6 +63,9 @@ endif
  set tm=500
  set history=500
  set laststatus=2
+ filetype on
+ set nobackup
+ set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 
 "let g:airline_symbols_ascii = 1
 "let g:codedark_term256=1
