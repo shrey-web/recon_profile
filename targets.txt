@@ -1,0 +1,21 @@
+[for link takeover]
+All bugcrowd and hackerone pvt
+https://www.theforage.com/security/disclosure
+https://rechargepayments.com/vulnerability-reporting/
+https://www.liquidweb.com/about-us/policies/bug-bounty-program/
+
+
+
+[link takeovers and widescope]
+https://www.openbugbounty.org/bugbounty/uniteddomains/
+https://www.openbugbounty.org/bugbounty/EmailMeFormTwtr/
+https://www.openbugbounty.org/bugbounty/HightextT/
+https://www.openbugbounty.org/bugbounty/BorisLapouga/
+https://hackenproof.com/bitforex/bitforex
+https://hackenproof.com/bitrue/bitrue
+https://hackenproof.com/cryptology/cryptology
+https://blinkit.com/bug-bounty
+https://www.wazoku.com/bug-bounty-terms-and-conditions/
+https://www.rebelmouse.com/bug-bounty-program
+https://www.securitas.com/en/about-us/responsible-disclosure/
+
