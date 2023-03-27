@@ -7,6 +7,10 @@ https://www.liquidweb.com/about-us/policies/bug-bounty-program/
 
 
 [link takeovers and widescope]
+https://hackerone.com/payfit
+https://bugcrowd.com/hulu
+https://bugcrowd.com/draftkings
+https://hackerone.com/tradingview
 https://www.openbugbounty.org/bugbounty/uniteddomains/
 https://www.openbugbounty.org/bugbounty/EmailMeFormTwtr/
 https://www.openbugbounty.org/bugbounty/HightextT/
