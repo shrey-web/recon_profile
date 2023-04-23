@@ -194,6 +194,10 @@ JS_HUNTING () {
 	echo -e ${BLUE}"[JS FILES HUNTING]" ${RED}"SecretFinder installation in progress ...";
 	cd $TOOLS_DIRECTORY && git clone https://github.com/m4ll0k/SecretFinder.git > /dev/null 2>&1 && cd SecretFinder && pip3 install -r requirements.txt > /dev/null 2>&1;
 	echo -e ${BLUE}"[JS FILES HUNTING]" ${GREEN}"SecretFinder installation is done !"; echo "";
+	#jsfinder
+	echo -e ${BLUE}"[USEFUL TOOLS]" ${RED}"jsfinder installation in progress ...";
+	go install -v github.com/kacakb/jsfinder@latest > /dev/null 2>&1 && ln -s ~/go/bin/jsfinder /usr/local/bin/;
+	echo -e ${BLUE}"[USEFUL TOOLS]" ${GREEN}"jsfinder installation is done !"; echo "";
 	#subjs
 	echo -e ${BLUE}"[JS FILES HUNTING]" ${RED}"subjs installation in progress ...";
 	cd /tmp && wget https://github.com/lc/subjs/releases/download/v1.0.1/subjs_1.0.1_linux_amd64.tar.gz > /dev/null 2>&1 && tar xvf subjs_1.0.1_linux_amd64.tar.gz > /dev/null 2>&1 && mv subjs /usr/local/bin;
