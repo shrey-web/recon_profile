@@ -131,7 +131,7 @@ HTTP_PARAMETER () {
 FUZZING_TOOLS () {
 	#ffuf
 	echo -e ${BLUE}"[FUZZING TOOLS]" ${RED}"ffuf installation in progress ...";
-	go install github.com/ffuf/ffuf@latest > /dev/null 2>&1 && ln -s ~/go/bin/ffuf /usr/local/bin/;
+	go install github.com/ffuf/ffuf/v2@latest > /dev/null 2>&1 && ln -s ~/go/bin/ffuf /usr/local/bin/;
 	echo -e ${BLUE}"[FUZZING TOOLS]" ${GREEN}"ffuf installation is done !"; echo "";
 	#gobuster
 	echo -e ${BLUE}"[FUZZING TOOLS]" ${RED}"Gobuster installation in progress ...";
